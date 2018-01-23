@@ -3,7 +3,7 @@ Microsoft China 0 Bejing hackfest ppt and demo repository
 
 ## Azure workbench
 ### Setup instruction
-Deploy ML Expriment and install Workbench
+Deploy ML Expriment and install Workbench  
 [Create Azure Machine Learning Preview accounts and install Azure Machine Learning Workbench](https://docs.microsoft.com/en-us/azure/machine-learning/preview/quickstart-installation)
 
 ### local execution
@@ -13,7 +13,7 @@ az ml experiment submit -c local tf_mnist.py
 ```
 
 ### remote execution
-[Configuring Azure Machine Learning Experimentation Service](https://docs.microsoft.com/en-us/azure/machine-learning/preview/experimentation-service-configuration)
+[Configuring Azure Machine Learning Experimentation Service](https://docs.microsoft.com/en-us/azure/machine-learning/preview/experimentation-service-configuration)  
 
 - deploy linux DSVM on Azure
 ```
@@ -43,7 +43,7 @@ az ml experiment submit -c gpu-vm2 tf_mnist.py
 ```
 
 ## Deploy your model to Azure 
-Deploy your deep learning model to Azure Web App for Containers
+Deploy your deep learning model to Azure Web App for Containers  
 [Use a custom Docker image for Web App for Containers](https://docs.microsoft.com/en-us/azure/app-service/containers/tutorial-custom-docker-image)
 
 EOF
