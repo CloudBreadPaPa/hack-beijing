@@ -1,5 +1,5 @@
 # Microsoft Azure Machine Learning Service
-Microsoft China 0 Bejing hackfest ppt and demo repository
+Microsoft China -  Bejing hackfest ppt and demo repository
 
 ## Azure workbench
 ### Setup instruction
