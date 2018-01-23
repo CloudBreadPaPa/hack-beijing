@@ -17,7 +17,7 @@ az ml experiment submit -c local tf_mnist.py
 
 - deploy linux DSVM on Azure
 ```
-az ml computetarget attach remotedocker --name gpu-vm1 --address 52.226.18.127 --username konan94 --password yourpassword
+az ml computetarget attach remotedocker --name gpu-vm1 --address remoteaddress --username loginid --password yourpassword
 ```
 
 - change .compute definition file, add definition
@@ -37,9 +37,13 @@ az ml experiment submit -c gpu-vm1 tf_mnist.py
 
 - multiple DSVM execution
 ```
-az ml computetarget attach remotedocker --name gpu-vm2 --address 40.79.67.1 --username konan94 --password yourpassword
+az ml computetarget attach remotedocker --name gpu-vm2 --address remoteaddress --username loginid --password yourpassword
 az ml experiment prepare -c gpu-vm2
 az ml experiment submit -c gpu-vm2 tf_mnist.py
 ```
+
+## Deploy your model to Azure 
+Deploy your deep learning model to Azure Web App for Containers
+[Use a custom Docker image for Web App for Containers](https://docs.microsoft.com/en-us/azure/app-service/containers/tutorial-custom-docker-image)
 
 EOF
